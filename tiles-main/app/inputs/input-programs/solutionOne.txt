@@ -1,0 +1,8 @@
+tile1 = tile [[0,1],[1,0]] \n
+tile2 = tile [[0,1],[1,0]] \n                                   
+wide1 = horizontalStick tile1 tile2 \n                             
+wide2 = horizontalStick tile2 tile1 \n                            
+wideRow0 = horizontalBuild 32 wide1 \n                                 
+wideRow1 = horizontalBuild 32 wide2 \n
+bigWide = verticalStick wideRow0 wideRow1 \n                                
+outputTile = verticalBuild 32 bigWide 
